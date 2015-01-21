@@ -1,0 +1,25 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lda\([-_.@[:alnum:]]+\): sieve: msgid=<[-_.@[:alnum:]]+>: stored mail into mailbox '[-_.@[:alnum:]]+'$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth-worker\([[:digit:]]+\): mysql\([.:[:xdigit:]]+\): Connected to database [-_[:alnum:]]+$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Disconnected: Logged out bytes=[[:digit:]\/]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Disconnected: Logged out in=[[:digit:]]+ out=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Disconnected for inactivity bytes=[[:digit:]\/]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Disconnected for inactivity in=[[:digit:]]+ out=[[:digit:]]++$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Disconnected: Disconnected in IDLE in=[[:digit:]]+ out=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Connection closed(: Connection reset by peer)? in=[[:digit:]]+ out=[[:digit:]]+$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Login: user=<[-_.@[:alnum:]]+>, method=PLAIN, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, mpid=[[:digit:]]+, (TLS(: Disconnected|: SSL_read\(\) syscall failed: Connection reset by peer)?|secured), session=<[-\/+_[:alnum:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Disconnected \(no auth attempts in [[:digit:]]+ secs\): user=<>, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, ((TLS( handshaking: (SSL_accept\(\) syscall failed: Connection reset by peer|Disconnected)|: SSL_read\(\) syscall failed: Connection reset by peer|: Disconnected)?|secured),)? session=<[-\/+_[:alnum:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Disconnected: Inactivity \(no auth attempts in [[:digit:]]+ secs\): user=<>, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, TLS( handshaking)?, session=<[-\/+_[:alnum:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap-login: Disconnected \(client didn't finish SASL auth, waited [[:digit:]]+ secs\): user=<>, method=PLAIN, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, TLS, session=<[-\/+_[:alnum:]]+>$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: managesieve-login: Disconnected \(no auth attempts in [[:digit:]]+ secs\): user=<>, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, session=<[-\/+_[:alnum:]]+>$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: managesieve-login: Login: user=<[-_.@[:alnum:]]+>, method=PLAIN, rip=[.:[:xdigit:]]+, lip=[.:[:xdigit:]]+, mpid=[[:digit:]]+, (secured|TLS), session=<[-\/+_[:alnum:]]+>$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: managesieve\([-_.@[:alnum:]]+\): Disconnected: Logged out bytes=[/[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: managesieve\([-_.@[:alnum:]]+\): Disconnected for inactivity bytes=[/[:digit:]]+$
+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-params: Generating SSL parameters$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-params: SSL parameters regeneration completed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with [[:digit:]]+ pending requests: EOF$
