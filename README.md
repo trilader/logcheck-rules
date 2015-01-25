@@ -19,3 +19,5 @@ For SSH the rules filter out a lot of preauth noise from people trying to access
 For dovecot the rules also filter most of the pre-auth idle noise and timeouts.
 
 For spampd the rules filter out messages being inspected, accepted, rejected or flagged. The spampd filters are a more or less filter suite for it as logcheck (on Debian systems at least) has no filters for spampd at all.
+
+For postfix the rules are just a single rule for now. This single rule ignores people trying to SASL authentication with the password "password".
