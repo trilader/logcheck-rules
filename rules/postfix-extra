@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]:  warning: unknown\[[.[:xdigit:]]+\]: SASL login authentication failed: UGFzc3dvcmQ6
