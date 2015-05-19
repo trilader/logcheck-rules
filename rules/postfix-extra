@@ -1,1 +1,2 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]:  warning: unknown\[[.[:xdigit:]]+\]: SASL login authentication failed: UGFzc3dvcmQ6
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: (unknown|[-.[:alnum:]]+)\[[.[:xdigit:]]+\]: SASL (LOGIN|PLAIN) authentication failed:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname [-.[:alnum:]]+ does not resolve to address [.[:xdigit:]]+(: Name or service not known)?$

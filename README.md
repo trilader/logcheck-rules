@@ -6,7 +6,7 @@ Installing
 
 To install the logcheck rules into your logckeck distribution simply run
 ```
-./install.sh /path/to/your/logckeck/rules
+/path/to/install.sh /path/to/your/logckeck/rules
 ```
 the script will automatically create symbolic links for each rule in this set so they can be updated easily from a single place
 
@@ -20,4 +20,4 @@ For dovecot the rules also filter most of the pre-auth idle noise and timeouts.
 
 For spampd the rules filter out messages being inspected, accepted, rejected or flagged. The spampd filters are a more or less filter suite for it as logcheck (on Debian systems at least) has no filters for spampd at all.
 
-For postfix the rules are just a single rule for now. This single rule ignores people trying to SASL authentication with the password "password".
+The postfix rules ignore remote hosts/clients with a incorrect or missing reverse DNS setup and people trying to do SASL authentication with the password "password".
