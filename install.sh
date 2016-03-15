@@ -25,7 +25,12 @@ INSTALL_DIR="$(readlink -f $1)"
 
 for rule in $(cd $PREFIX; echo *);
 do
+    if [ -f "$INSTALL_DIR/$rule" ]; then
+        echo "$rule is already installed"
+    else
+        echo "Installing $rule"
         ln -s "$PREFIX$rule" "$INSTALL_DIR/$rule"
+    fi
 done
 
 exit 0
