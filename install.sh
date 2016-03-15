@@ -15,6 +15,9 @@ function usage()
 if [ -z "$1" ]; then 
     echo "You must specify a directory to install the rules to"
     usage
+elif [ ! -d "$1" ]; then
+    echo "You must specify a writable, existing directory for installation"
+    usage
 fi
 
 PREFIX="$DIR/rules/"
