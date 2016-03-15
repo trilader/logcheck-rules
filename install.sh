@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-DIR="$(dirname $0)"
+DIR="$(readlink -f $(dirname $0))"
 
 function usage()
 {
@@ -18,10 +18,11 @@ if [ -z "$1" ]; then
 fi
 
 PREFIX="$DIR/rules/"
+INSTALL_DIR="$(readlink -f $1)"
 
 for rule in $(cd $PREFIX; echo *);
 do
-    ln -s "$PREFIX$rule" "$1/$rule"
+        ln -s "$PREFIX$rule" "$INSTALL_DIR/$rule"
 done
 
 exit 0
