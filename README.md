@@ -21,3 +21,5 @@ For dovecot the rules also filter most of the pre-auth idle noise and timeouts.
 For spampd the rules filter out messages being inspected, accepted, rejected or flagged. The spampd filters are a more or less filter suite for it as logcheck (on Debian systems at least) has no filters for spampd at all.
 
 The postfix rules ignore remote hosts/clients with a incorrect or missing reverse DNS setup and people trying to do SASL authentication with the password "password".
+
+The systemd rules (systemd-extra-debian) were copied form the debian wiki into this repository for my own convenience. I havent't written them myself.
