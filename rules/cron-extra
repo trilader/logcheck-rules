@@ -1,1 +1,1 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ CRON\[[0-9]+\]: pam_unix\(cron:session\): session (opened|closed) for user \([[:alnum:]_-]+\) by \(uid=0\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ CRON\[[0-9]+\]: pam_unix\(cron:session\): session (opened|closed) for user \([[:alnum:]_-]+\)( by \(uid=0\))?$
