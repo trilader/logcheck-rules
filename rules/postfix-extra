@@ -1,3 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: (unknown|[-.[:alnum:]]+)\[[.[:xdigit:]]+\]: SASL (login|LOGIN|PLAIN) authentication failed:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname [-.[:alnum:]]+ does not resolve to address [.[:xdigit:]]+(: Name or service not known)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: SSL accept error from unknown\[[.[:xdigit:]]+\]: lost connection$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: disconnect from localhost\[127\.0\.0\.1\] quit=1 commands=1$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: disconnect from unknown\[[.:[:xdigit:]]+\] (helo|ehlo)=[[:digit:]] auth=0/[[:digit:]] (rset=1)? quit=1 commands=[/[:digit:]]+
